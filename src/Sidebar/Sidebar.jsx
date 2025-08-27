@@ -3,7 +3,7 @@ import './Sidebar.css'
 import Category from './Category/Category.jsx'
 import Colors from './Colors/Colors.jsx'
 import Price from './Price/Price.jsx'
-const Sidebar = () => {
+const Sidebar = ({handleChange}) => {
   return (
     <>
     <section className='sidebar'>
@@ -12,9 +12,9 @@ const Sidebar = () => {
            
         </div>
         <div className='sidebar-items'>
-        <Category/>
-        <Colors/>
-        <Price/>
+        <Category handleChange={handleChange}/>
+        <Colors handleChange={handleChange} />
+        <Price handleChange={handleChange}/>
         </div>
        
 

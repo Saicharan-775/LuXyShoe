@@ -3,13 +3,16 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import './NavBar.css'
-const NavBar = () => {
+const NavBar = ({query,handleInputChange }) => {
   return (
     <nav>
         <div className='nav-container'>
         <input
-        type='text'
-        placeholder='search your shoes'
+          className="search-input"
+          type="text"
+          onChange={handleInputChange}
+          value={query}
+          placeholder="Enter your search shoes."
         />
          
         </div>

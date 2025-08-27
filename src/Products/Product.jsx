@@ -1,20 +1,10 @@
 import React from 'react'
-import Card from '../Components/Card.jsx'
 import './Products.css'
-const Product = () => {
+const Product = ({result}) => {
   return (
    <>
     <section className='card-container'>
-       <Card/>
-        <Card/>
-         <Card/>
-          <Card/>
-           <Card/>
-            <Card/>
-        <Card/>
-         <Card/>
-          <Card/>
-           <Card/>
+     {result}
 
      </section>
    </>
